@@ -2,11 +2,13 @@
     height: 700px;
     width: 350px;
     text-align: left;
+    position: absolute;
+    top: 10%;
 }
 
 .window {
     background-color: transparent;
-    position: relative;
+    position: absolute;
     height: 660px;
     border-radius: 30px;
     width: 305px;

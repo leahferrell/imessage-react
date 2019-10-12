@@ -31,7 +31,7 @@ p {
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
     height: 85%;
     border-radius: 25px;
@@ -63,7 +63,7 @@ p {
     position: relative;
 }
 
-.yours .message.last:before {
+.yours .message:before {
     content: "";
     position: absolute;
     z-index: 0;
@@ -74,7 +74,7 @@ p {
     background: #eee;
     border-bottom-right-radius: 15px;
 }
-.yours .message.last:after {
+.yours .message:after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -97,7 +97,7 @@ p {
     position: relative;
 }
 
-.mine .message.last:before {
+.mine .message:before {
     content: "";
     position: absolute;
     z-index: 0;
@@ -109,7 +109,7 @@ p {
     border-bottom-left-radius: 15px;
 }
 
-.mine .message.last:after {
+.mine .message:after {
     content: "";
     position: absolute;
     z-index: 1;
