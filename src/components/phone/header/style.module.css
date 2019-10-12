@@ -1,18 +1,21 @@
 .header {
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: #f0f0f0;
     height: 16%;
-    width: 90%;
-    position: absolute;
+    width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom: dimgrey 0.3pt solid;
+    position: absolute;
+    z-index: 3;
+}
+
+.icons {
+    width: auto;
 }
 
 .left-icons {
     margin-top: 12px;
-    margin-left: 25px;
-    padding-top: 8px;
-    padding-left: 10px;
+    margin-left: 19px;
     display: flex;
     float: left;
     font-size: .6em;
@@ -20,8 +23,7 @@
 
 .right-icons {
     margin-top: 12px;
-    margin-right: 24px;
-    padding-top: 8px;
+    margin-right: 13px;
     float: right;
     display: flex;
     font-size: .7em;
@@ -37,7 +39,6 @@
     z-index: 15;
     color: #0B93F6;
     font-size: 1.5em;
-    margin-left: 12px;
     margin-top: 15px;
 }
 

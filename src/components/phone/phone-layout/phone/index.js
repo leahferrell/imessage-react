@@ -1,14 +1,15 @@
 import React from 'react'
-import styles from './style.module.css'
+import styles from './../style.module.css'
 import PhoneWindow from "../phone-window";
+import PhoneImage from "../phone-image";
 
-const PhoneOutline = () => (
+const Phone = () => (
   <div
     className={styles['phone-space']}
   >
-    <div className={styles["phone-image"]}/>
+    <PhoneImage/>
     <PhoneWindow/>
   </div>
 );
 
-export default PhoneOutline
+export default Phone

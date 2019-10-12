@@ -1,9 +1,20 @@
 import React from 'react'
-import PhoneOutline from "../phone/phone-outline";
+import Phone from "../phone/phone-layout/phone";
+import styles from "./style.module.css";
+import LeftFrame from "../controller/frame";
 
 const App = () => (
-  <div>
-    <PhoneOutline />
+  <div className={styles["root"]}>
+    <div className={[styles["split"], styles["left"]].join(' ')}>
+      <div className={styles["centered-horizontal"]}>
+        <LeftFrame/>
+      </div>
+    </div>
+    <div className={[styles["split"], styles["right"]].join(' ')}>
+      <div className={styles["centered-horizontal"]}>
+        <Phone />
+      </div>
+    </div>
   </div>
 );
 

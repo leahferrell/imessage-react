@@ -26,3 +26,50 @@
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+.controller {
+    float: left;
+    position: relative;
+}
+
+.phone {
+    float: right;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.root{
+    position: absolute;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left{
+    left: 0;
+    background-color: #eee;
+}
+
+.right {
+    right: 0;
+    background-color: #111;
+}
+
+.centered-horizontal {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
