@@ -1,0 +1,18 @@
+.phone-space {
+    padding: 10px;
+    height: 700px;
+    width: 350px;
+    position: absolute;
+}
+
+.phone-image {
+    background-image: url("/iphone-xs-frame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, transparent) , to(rgba(250, 250, 250, 0.1)));
+    padding: 10px;
+    height: 700px;
+    width: 350px;
+    position: absolute;
+}

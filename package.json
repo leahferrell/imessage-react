@@ -1,5 +1,5 @@
 {
-  "name": "slog",
+  "name": "imessage-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,9 +8,12 @@
     "react-app-rewire-postcss": "^3.0.2",
     "react-app-rewired": "^1.6.2",
     "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
     "react-redux": "^7.1.1",
     "react-scripts": "3.2.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

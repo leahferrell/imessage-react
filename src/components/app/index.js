@@ -1,11 +1,9 @@
 import React from 'react'
-import SendMessage from "../../store/send-message";
-import DisplayedMessages from "../../store/display-messages"
+import PhoneOutline from "../phone-outline";
 
 const App = () => (
   <div>
-    <DisplayedMessages />
-    <SendMessage/>
+    <PhoneOutline />
   </div>
 );
 

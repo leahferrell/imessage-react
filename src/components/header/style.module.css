@@ -1,0 +1,76 @@
+.header {
+    background-color: rgba(200, 200, 200, 0.2);
+    height: 16%;
+    width: 90%;
+    position: absolute;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: dimgrey 0.3pt solid;
+}
+
+.left-icons {
+    margin-top: 12px;
+    margin-left: 25px;
+    padding-top: 8px;
+    padding-left: 10px;
+    display: flex;
+    float: left;
+    font-size: .6em;
+}
+
+.right-icons {
+    margin-top: 12px;
+    margin-right: 24px;
+    padding-top: 8px;
+    float: right;
+    display: flex;
+    font-size: .7em;
+}
+
+.messenger-header {
+    clear: both;
+}
+
+.back-arrow {
+    display: flex;
+    float: left;
+    z-index: 15;
+    color: #0B93F6;
+    font-size: 1.5em;
+    margin-left: 12px;
+    margin-top: 15px;
+}
+
+.user-detail {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.user-icon {
+    background-image: linear-gradient(#939393, #7b7b7b);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    color: white;
+    font-family: "Helvetica Neue", serif;
+    font-size: .75em;
+    text-align: center;
+    line-height: 35px;
+    margin: auto;
+}
+
+.user-name {
+    font-size: .5em;
+    color: #000000;
+    font-family: "Helvetica Neue", serif;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.right-arrow {
+    margin-bottom: -2px;
+    color: #7b7b7b;
+    font-size: 1.1em;
+}
