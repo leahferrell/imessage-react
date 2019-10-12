@@ -35,8 +35,28 @@ const PhoneWindow = () => (
             id: 4,
             isMe: false,
             message: "cool."
+          },
+          {
+            id: 5,
+            isMe: true,
+            message: "typing all of the things."
+          },
+          {
+            id: 6,
+            isMe: true,
+            message: "just testing out my css. adding more content here to make it overflow maybe..."
+          },
+          {
+            id: 7,
+            isMe: false,
+            message: "cool."
+          },
+          {
+            id: 8,
+            isMe: false,
+            message: "cool."
           }
-        ]
+        ].reverse()
       }/>
       <ClosedInputView/>
   </div>

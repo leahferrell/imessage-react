@@ -22,7 +22,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 0;
 }
 
@@ -41,4 +41,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }

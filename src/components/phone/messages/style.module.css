@@ -30,13 +30,14 @@ p {
 .chat {
     width: auto;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    padding: 0 20px;
+    flex-direction: column-reverse;
     position: absolute;
-    height: 85%;
-    border-radius: 25px;
+    height: 455px;
     z-index: -5;
     background-color: white;
+    overflow: auto;
+    top: 105px;
 }
 
 .messages {
