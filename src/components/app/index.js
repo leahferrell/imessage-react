@@ -1,5 +1,5 @@
 import React from 'react'
-import PhoneOutline from "../phone-outline";
+import PhoneOutline from "../phone/phone-outline";
 
 const App = () => (
   <div>

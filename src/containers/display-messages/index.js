@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import MessageHistory from "../../components/message-history";
+import MessageHistory from "../../components/messages/message-history";
 
 const getDisplayedMessages = (messages) => {
   return messages;

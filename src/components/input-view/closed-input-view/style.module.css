@@ -1,0 +1,11 @@
+.input-view {
+    background-color: #d7d7dc;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    width: 90%;
+    height: 100px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 8;
+}

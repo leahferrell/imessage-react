@@ -1,0 +1,10 @@
+.home-bar {
+    height: 4px;
+    border-radius: 2px;
+    width: 35%;
+    background-color: black;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
