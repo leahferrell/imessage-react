@@ -1,15 +1,10 @@
 import React from 'react'
 import styles from './../style.module.css'
-import PropTypes from "prop-types";
 
-const SendButton = ({title}) => (
-  <button className={styles['send-button']}>
-    {title}
+const SendButton = ({children, style=''}) => (
+  <button className={[styles['send-button'], styles[style]].join(' ')}>
+    {children}
   </button>
 );
-
-SendButton.propTypes = {
-  title: PropTypes.string
-};
 
 export default SendButton

@@ -8,17 +8,6 @@ h1 {
     padding-bottom: 50px;
 }
 
-.send-button {
-    margin-left: -20px;
-    border: none;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .frame-controller {
     background-color: #000;
     color: white;
@@ -47,7 +36,7 @@ h1 {
     border-radius: 30px;
     padding: 16px 21px;
     color: #868686;
-    width: calc(100% - 40px);
+    width: calc(100% - 46px);
     font-size: 1em;
 }
 
@@ -55,7 +44,7 @@ h1 {
     background-color: #000;
     border: #fff 4px solid;
     color: #fff;
-    width: calc(100% - 42px);
+    width: calc(100% - 46px);
     outline: none;
     padding: 14px 19px;
 }
@@ -69,15 +58,23 @@ h1 {
     color: #fff;
 }
 
-.send-button {
+.buttons {
     display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.send-button {
     background: #0085D1;
     border-radius: 30px;
     padding: 15px 30px;
     color: #fff;
     font-size: .8em;
     text-align: center;
-    margin: auto;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    margin: 10px;
 }
 
 .send-button:hover, .send-button:active {
@@ -86,4 +83,39 @@ h1 {
 
 .send-button:focus {
     outline: none;
+}
+
+.icon-button {
+    font-size: 1.25em;
+    background: transparent;
+    border: 2px solid #868686;
+    padding: 7px;
+    line-height: 0;
+    color: #868686;
+    margin: 0 0 0 10px;
+}
+
+.icon-button:hover, .icon-button:active, .icon-button:focus {
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 6px;
+}
+
+.corner-buttons {
+    z-index: 15;
+    position: absolute;
+    float: right;
+    text-align: right;
+    bottom: 40px;
+    right: 40px;
+}
+
+.clear-buffer {
+    z-index: 12;
+    position: relative;
+    text-align: right;
+    float: right;
+    bottom: 51px;
+    right: 8px;
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './../style.module.css'
 import PropTypes from "prop-types";
+import SendButton from "../send-button";
+import {IoIosClose} from "react-icons/io";
 
 const SendTextBox = ({title, defaultText, input}) => (
   <div className={styles['send-box']}>
@@ -16,6 +18,9 @@ const SendTextBox = ({title, defaultText, input}) => (
       name={title}
     >
     </input>
+    <div className={styles['clear-buffer']}>
+      <SendButton children={<IoIosClose/>} style={"icon-button"} />
+    </div>
   </div>
 );
 
