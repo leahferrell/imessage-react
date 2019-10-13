@@ -19,3 +19,72 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.frame-controller {
+    background-color: #000;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    height: calc(100% - 160px);
+    min-height: max-content;
+    overflow: visible;
+    width: calc(100% - 160px);
+    margin: 40px;
+    position: absolute;
+}
+
+.send-label {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 1.25em;
+}
+
+.input-box {
+    display: block;
+    background-color: #000;
+    border: #868686 2px solid;
+    border-radius: 30px;
+    padding: 16px 21px;
+    color: #868686;
+    width: calc(100% - 40px);
+    font-size: 1em;
+}
+
+.input-box:active,.input-box:hover,.input-box:focus {
+    background-color: #000;
+    border: #fff 4px solid;
+    color: #fff;
+    width: calc(100% - 42px);
+    outline: none;
+    padding: 14px 19px;
+}
+
+.send-box {
+    margin: 50px 0;
+    color: #868686;
+    border-color: #868686;
+}
+
+.send-box:hover, .send-box:active, .send-box:focus {
+    color: #fff;
+    border-color: #fff;
+}
+
+.send-button {
+    display: block;
+    background: #0085D1;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+    margin: auto;
+}
+
+.send-button:hover, .send-button:active {
+    background-color: #398cd8;
+}
+
+.send-button:focus {
+    outline: none;
+}

@@ -5,10 +5,8 @@ import LeftFrame from "../controller/frame";
 
 const App = () => (
   <div className={styles["root"]}>
-    <div className={[styles["split"], styles["left"]].join(' ')}>
-      <div className={styles["centered-horizontal"]}>
-        <LeftFrame/>
-      </div>
+    <div className={[styles["split"], styles["left"], "animated","fadeIn"].join(' ')}>
+      <LeftFrame/>
     </div>
     <div className={[styles["split"], styles["right"]].join(' ')}>
       <div className={styles["centered-horizontal"]}>

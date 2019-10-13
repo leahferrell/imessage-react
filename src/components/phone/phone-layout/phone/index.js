@@ -5,7 +5,7 @@ import PhoneImage from "../phone-image";
 
 const Phone = () => (
   <div
-    className={[styles['phone-space'],"animated","slideInLeft"].join(' ')}
+    className={[styles['phone-space'],"animated","fadeInLeft","delay-1s","slow"].join(' ')}
   >
     <PhoneImage/>
     <PhoneWindow/>

@@ -1,0 +1,10 @@
+body {
+    font-family: "Helvetica Neue", serif;
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}

@@ -4,6 +4,7 @@
     text-align: left;
     position: absolute;
     top: 10%;
+    min-height: 750px;
 }
 
 .window {
