@@ -18,7 +18,7 @@ const PhoneWindow = () => (
         [
           {
             id: 1,
-            isMe: true,
+            isMe: false,
             message: "hello"
           },
           {

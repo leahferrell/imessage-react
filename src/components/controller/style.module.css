@@ -25,11 +25,11 @@
     color: white;
     padding: 40px;
     text-align: left;
-    height: calc(100% - 160px);
+    height: calc(100% - 130px);
     min-height: max-content;
     overflow: visible;
-    width: calc(100% - 160px);
-    margin: 40px;
+    width: calc(100% - 180px);
+    margin: 0 50px 50px 50px;
     position: absolute;
 }
 
