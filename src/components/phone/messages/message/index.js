@@ -6,7 +6,7 @@ const Message = ({ isMe, message }) => {
   let className = (isMe ? "mine": "yours");
 
   return (
-    <div className={[styles[className], styles["messages"], "animated", "slideInUp", "delay-5s", "slow"].join(' ')}>
+    <div className={[styles[className], styles["messages"], "animated", "slideInUp", "delay-4s", "slow"].join(' ')}>
       <p
         className={styles["message"]}
       >
