@@ -20,6 +20,7 @@ p {
 
 .chat {
     width: auto;
+    min-width: 265px;
     display: flex;
     padding: 0 20px;
     flex-direction: column-reverse;
