@@ -4,9 +4,9 @@ import SendTextBox from "../send-text-box";
 import SendButton from "../send-button";
 
 const LeftFrame = () => (
-  <div className={[styles['frame-controller'],'animated','fadeInDown','delay-2s'].join(' ')}>
+  <div className={[styles['frame-controller'],'animated','fadeIn','slow'].join(' ')}>
     <h1>Say hello.</h1>
-      <div className={['animated','fadeIn','delay-4s','slow'].join(' ')}>
+      <div className={[styles['inputs'],'animated','fadeIn','delay-3s','slow'].join(' ')}>
           <SendTextBox
             title={"Send a message."}
             defaultText={"from you..."}

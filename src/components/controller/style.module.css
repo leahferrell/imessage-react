@@ -1,12 +1,11 @@
-.controller {
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-}
-
 .input {
     border-radius: 25px;
     height: 25px;
+}
+
+h1 {
+    border-bottom: 1px #444444 solid;
+    padding-bottom: 50px;
 }
 
 .send-button {
@@ -25,12 +24,14 @@
     color: white;
     padding: 40px;
     text-align: left;
-    height: calc(100% - 130px);
+    height: calc(100% - 80px);
     min-height: max-content;
     overflow: visible;
-    width: calc(100% - 180px);
-    margin: 0 50px 50px 50px;
+    width: calc(100% - 81px);
     position: absolute;
+}
+
+.inputs {
 }
 
 .send-label {
@@ -62,12 +63,10 @@
 .send-box {
     margin: 50px 0;
     color: #868686;
-    border-color: #868686;
 }
 
 .send-box:hover, .send-box:active, .send-box:focus {
     color: #fff;
-    border-color: #fff;
 }
 
 .send-button {

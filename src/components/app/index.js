@@ -9,7 +9,7 @@ const App = () => (
     <Header/>
     <div className={styles["content"]}>
       <div className={styles["columns-container"]}>
-        <div className={[styles["split"], styles["left"], "animated","fadeIn"].join(' ')}>
+        <div className={[styles["split"], styles["left"]].join(' ')}>
           <LeftFrame/>
         </div>
         <div className={[styles["split"], styles["right"]].join(' ')}>
