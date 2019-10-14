@@ -1,7 +1,6 @@
 import {ADD_MESSAGE, BLANK_MESSAGE, CLEAR_HISTORY, initialState} from "../../actions/message";
 
 const messages = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case ADD_MESSAGE:
       return [
