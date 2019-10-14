@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './../style.module.css'
 import PropTypes from "prop-types";
 import IconButton from "../icon-button";
 import {IoIosArrowRoundForward} from "react-icons/io";
-import {addMessage} from "../../../actions/message";
+import {addMessage} from "../../../actions/messages";
 import {connect} from "react-redux";
+import {setMessage} from "../../../actions/message";
 
-const SendTextBox = ({title, isMe, addMessage}) => {
-  const [message, setMessage] = useState('');
+const SendTextBox = ({title, isMe, text, addMessage, setMessage}) => {
   return (
     <form
       className={styles['send-box']}
       onSubmit={(e) => {
         e.preventDefault();
-        addMessage(message,isMe);
-        setMessage('');
+        addMessage(text,isMe);
+        setMessage('',isMe);
       }}
     >
       <label
@@ -24,10 +24,10 @@ const SendTextBox = ({title, isMe, addMessage}) => {
         {title}
       </label>
       <input
-        value={message}
+        value={text}
         className={[styles['input-box']].join(' ')}
         name={title}
-        onChange={e => setMessage(e.target.value)}
+        onChange={e => setMessage(e.target.value, isMe)}
       >
       </input>
       <div className={styles['send-buffer']}>
@@ -43,13 +43,23 @@ const SendTextBox = ({title, isMe, addMessage}) => {
 SendTextBox.propTypes = {
   title: PropTypes.string,
   isMe: PropTypes.bool,
-  addMessage: PropTypes.func.isRequired
+  text: PropTypes.string,
+  addMessage: PropTypes.func.isRequired,
+  setMessage: PropTypes.func.isRequired
 };
 
-const mapStateToProps = state => state;
+const filterSendTextBox = (isMe, message) => (
+  isMe === message.isMe ? message.text : ''
+);
+
+const mapStateToProps = (state, ownProps) => ({
+  ...ownProps,
+  text: filterSendTextBox(ownProps.isMe, state.message)
+});
 
 const mapDispatchToProps = (dispatch) => ({
-  addMessage: (message, isMe) => dispatch(addMessage(message, isMe))
+  addMessage: (text, isMe) => dispatch(addMessage(text, isMe)),
+  setMessage: (text, isMe) => dispatch(setMessage(text, isMe))
 });
 
 export default connect(

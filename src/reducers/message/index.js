@@ -1,23 +1,15 @@
-import {ADD_MESSAGE, BLANK_MESSAGE, CLEAR_HISTORY, initialState} from "../../actions/message";
+import {SET_MESSAGE, initialState} from "../../actions/message";
 
-const messages = (state = initialState, action) => {
+const message = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_MESSAGE:
-      return [
-        {
-          id: action.id,
-          isMe: action.isMe,
-          message: action.message
-        },
-        ...state
-      ];
-    case BLANK_MESSAGE:
-      return state;
-    case CLEAR_HISTORY:
-      return [];
+    case SET_MESSAGE:
+      return {
+        text: action.text,
+        isMe: action.isMe
+      };
     default:
       return state;
   }
 };
 
-export default messages
+export default message

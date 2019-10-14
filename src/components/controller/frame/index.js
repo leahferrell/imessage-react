@@ -3,7 +3,7 @@ import styles from './../style.module.css'
 import SendTextBox from "../send-text-box";
 import IconButton from "../icon-button";
 import {IoIosTrash, IoIosBuild} from "react-icons/io";
-import {removeAllMessages} from "../../../actions/message";
+import {removeAllMessages} from "../../../actions/messages";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
 

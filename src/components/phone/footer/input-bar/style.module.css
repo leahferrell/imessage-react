@@ -11,6 +11,12 @@
     margin-left: 15px;
 }
 
+.text-active {
+    color: #000;
+    font-size: .6em;
+    margin-left: 15px;
+}
+
 .text-box {
     background-color: #ffffff;
     border: #adadad 1px solid;

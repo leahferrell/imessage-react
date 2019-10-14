@@ -17,7 +17,7 @@ MessageHistory.propTypes = {
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       isMe: PropTypes.bool,
-      message: PropTypes.string.isRequired
+      text: PropTypes.string.isRequired
     }).isRequired
   ).isRequired
 };
