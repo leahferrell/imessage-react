@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from './../style.module.css'
 
-const SendButton = ({children, style=''}) => (
-  <button className={[styles['send-button'], styles[style]].join(' ')}>
+const SendButton = ({children, moduleStyle=''}) => (
+  <button
+    className={[styles['send-button'], styles[moduleStyle]].join(' ')}
+    type="submit"
+  >
     {children}
   </button>
 );

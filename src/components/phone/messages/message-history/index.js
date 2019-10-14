@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Message from "../message";
 import styles from "./../style.module.css";
+import connect from "react-redux/es/connect/connect";
 
 const MessageHistory = ({ messages }) => (
   <div className={styles["chat"]}>
@@ -21,4 +22,16 @@ MessageHistory.propTypes = {
   ).isRequired
 };
 
-export default MessageHistory
+const getMessageHistory = (messages) => {
+  //TODO: add logic here as needed
+  console.log(messages);
+  return messages;
+};
+
+const mapStateToProps = state => ({
+  messages: getMessageHistory(state.messages)
+});
+
+export default connect(
+  mapStateToProps
+)(MessageHistory)

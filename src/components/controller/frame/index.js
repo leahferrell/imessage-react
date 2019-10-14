@@ -9,20 +9,24 @@ const LeftFrame = () => (
     <h1>Say hello.</h1>
     <div className={[styles['inputs'],'animated','fadeIn','delay-3s','slow'].join(' ')}>
       <SendTextBox
-          title={"Send a message."}
-          defaultText={"from you..."}
+        id = {0}
+        title={"Send a message."}
+        defaultText={"from you..."}
+        isMe={true}
       />
       <SendTextBox
-          title={"Don't leave them on read."}
-          defaultText={"from them..."}
+        id = {1}
+        title={"Don't leave them on read."}
+        defaultText={"from them..."}
+        isMe={false}
       />
       <br/>
       <div className={styles['buttons']}>
-        <SendButton children={"Send"} style={"send"}/>
+        <SendButton children={"Send"} moduleStyle={"send"}/>
       </div>
       <div className={[styles['buttons'],styles['corner-buttons']].join(' ')}>
-        <SendButton children={<IoIosTrash/>} style={"icon-button"}/>
-        <SendButton children={<IoIosBuild/>} style={"icon-button"}/>
+        <SendButton children={<IoIosTrash/>} moduleStyle={"icon-button"}/>
+        <SendButton children={<IoIosBuild/>} moduleStyle={"icon-button"}/>
       </div>
     </div>
   </div>

@@ -14,50 +14,7 @@ const PhoneWindow = () => (
         name={"Britain"}
         time={getTime()}
       />
-      <MessageHistory messages={
-        [
-          {
-            id: 1,
-            isMe: false,
-            message: "hello"
-          },
-          {
-            id: 2,
-            isMe: false,
-            message: "what's up?"
-          },
-          {
-            id: 3,
-            isMe: true,
-            message: "i am testing out a thing. just going to type a lot of words and stuff...."
-          },
-          {
-            id: 4,
-            isMe: false,
-            message: "cool."
-          },
-          {
-            id: 5,
-            isMe: true,
-            message: "typing all of the things."
-          },
-          {
-            id: 6,
-            isMe: true,
-            message: "just testing out my css. adding more content here to make it overflow maybe..."
-          },
-          {
-            id: 7,
-            isMe: false,
-            message: "cool."
-          },
-          {
-            id: 8,
-            isMe: false,
-            message: "cool."
-          }
-        ].reverse()
-      }/>
+      <MessageHistory/>
       <ClosedInputView/>
   </div>
 );

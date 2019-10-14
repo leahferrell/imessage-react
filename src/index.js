@@ -1,5 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Root from './containers/root'
+import Root from './components/root'
 
 render(<Root />, document.getElementById('root'));

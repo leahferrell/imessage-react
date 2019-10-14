@@ -85,7 +85,7 @@ h1 {
     outline: none;
 }
 
-.icon-button {
+.icon-button, .icon-button-send {
     font-size: 1.25em;
     background: transparent;
     border: 2px solid #868686;
@@ -95,7 +95,8 @@ h1 {
     margin: 0 0 0 10px;
 }
 
-.icon-button:hover, .icon-button:active, .icon-button:focus {
+.icon-button:hover, .icon-button:active, .icon-button:focus,
+.icon-button-send:hover, .icon-button-send:active, .icon-button-send:focus{
     color: #fff;
     background: transparent;
     border: 3px solid #fff;
@@ -111,11 +112,22 @@ h1 {
     right: 40px;
 }
 
-.clear-buffer {
+.send-buffer {
     z-index: 12;
     position: relative;
     text-align: right;
     float: right;
     bottom: 51px;
     right: 8px;
+}
+
+.icon-button-send {
+    color: #0085D1;
+    border: 2px solid #0085D1;
+}
+
+.icon-button-send:hover, .icon-button-send:active, .icon-button-send:focus {
+    color: #398cd8;
+    border: 3px solid #398cd8;
+    font-weight: bold;
 }
