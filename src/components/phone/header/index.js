@@ -3,12 +3,13 @@ import styles from './style.module.css'
 import {IoIosArrowBack, IoIosArrowForward, IoIosBatteryFull, IoIosCellular, IoIosWifi} from "react-icons/io";
 import {TiLocationArrow} from "react-icons/ti";
 import PropTypes from "prop-types";
+import Clock from "./clock";
 
-const Header = ({time, initials, name}) => (
+const Header = ({initials, name}) => (
   <div className={styles['header']}>
     <div className={styles['icons']}>
       <span className={styles['left-icons']}>
-        {time}
+        <Clock/>
         <TiLocationArrow/>
       </span>
       <span className={styles['right-icons']}>
@@ -36,7 +37,6 @@ const Header = ({time, initials, name}) => (
 );
 
 Header.propTypes = {
-  time: PropTypes.string.isRequired,
   initials: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 };
