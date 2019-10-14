@@ -1,6 +1,8 @@
 # imessage-react
 iMessage simulator written in React.js
 
+![screen recording](docs/imessage-sim-recording-1.gif)
+
 ## About
 
 This project was developed by Leah Ferrell as an exploration of React and Redux concepts.
@@ -12,6 +14,6 @@ This project was developed by Leah Ferrell as an exploration of React and Redux 
 3. `npm start`
 4. Navigate to: `http://localhost:3000`
 
-## Screen Recording
+## Screen Shots
 
-![screen recording](docs/imessage-sim-recording-1.gif)
+![screen shot](docs/screenshot-1.png)
