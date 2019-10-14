@@ -11,3 +11,7 @@ This project was developed by Leah Ferrell as an exploration of React and Redux 
 2. `npm install`
 3. `npm start`
 4. Navigate to: `http://localhost:3000`
+
+## Sample Image
+
+![sample image](docs/screenshot-1.png)
