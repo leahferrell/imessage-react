@@ -1,4 +1,3 @@
-export const SEND_MESSAGE = 'SEND_MESSAGE';
 export const CHANGE_SETTINGS = 'CHANGE_SETTINGS';
 export const TYPE_MESSAGE = 'TYPE_MESSAGE';
 export const CLEAR_MESSAGE = 'CLEAR_MESSAGE';
@@ -14,13 +13,7 @@ export const initialState = [{
 
 let nextMessageId = 1;
 
-export function sendMessage(message){
-  return {type: SEND_MESSAGE, message }
-}
-
 export function addMessage(message, isMe){
-  console.log(`attempting to add message ${message} - ${isMe}`);
-
   if(message !== undefined && message !== ''){
     return {
       type: ADD_MESSAGE,
@@ -33,4 +26,8 @@ export function addMessage(message, isMe){
       type: BLANK_MESSAGE
     }
   }
+}
+
+export function removeAllMessages(){
+  return { type: CLEAR_HISTORY }
 }

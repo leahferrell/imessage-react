@@ -3,11 +3,11 @@ import styles from './style.module.css'
 import InputBar from "../input-bar";
 import HomeBar from "../home-bar";
 
-const ClosedInputView = () => (
+const CollapsedInputFooter = () => (
   <div className={styles['input-view']}>
     <InputBar/>
     <HomeBar/>
   </div>
 );
 
-export default ClosedInputView
+export default CollapsedInputFooter

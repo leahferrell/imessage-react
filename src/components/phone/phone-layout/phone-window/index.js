@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './../style.module.css'
 import Header from "../../header";
-import ClosedInputView from "../../input-view/closed-input-view";
+import CollapsedInputFooter from "../../footer/collapsed-input-footer";
 import {getTime} from "../../../../utils/time";
 import MessageHistory from "../../messages/message-history";
 
@@ -15,7 +15,7 @@ const PhoneWindow = () => (
         time={getTime()}
       />
       <MessageHistory/>
-      <ClosedInputView/>
+      <CollapsedInputFooter/>
   </div>
 );
 

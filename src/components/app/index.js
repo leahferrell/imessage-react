@@ -1,25 +1,16 @@
-import React from 'react'
-import Phone from "../phone/phone-layout/phone";
-import styles from "./style.module.css";
-import LeftFrame from "../controller/frame";
-import Header from "../header";
+import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import configureStore from '../../store'
+import AppLayout from '../layout'
 
-const App = () => (
-  <div className={styles["container"]}>
-    <Header/>
-    <div className={styles["content"]}>
-      <div className={styles["columns-container"]}>
-        <div className={[styles["split"], styles["left"]].join(' ')}>
-          <LeftFrame/>
-        </div>
-        <div className={[styles["split"], styles["right"]].join(' ')}>
-          <div className={styles["centered-horizontal"]}>
-            <Phone />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+const store = configureStore();
 
-export default App
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <AppLayout />
+      </Provider>
+    )
+  }
+}

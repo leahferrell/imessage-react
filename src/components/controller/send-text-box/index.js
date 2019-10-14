@@ -1,21 +1,20 @@
 import React, { useState } from 'react'
 import styles from './../style.module.css'
 import PropTypes from "prop-types";
-import SendButton from "../send-button";
+import IconButton from "../icon-button";
 import {IoIosArrowRoundForward} from "react-icons/io";
 import {addMessage} from "../../../actions/message";
 import {connect} from "react-redux";
 
-const SendTextBox = ({id, title, isMe, addMessage}) => {
-  const [input, setInput] = useState('');
+const SendTextBox = ({title, isMe, addMessage}) => {
+  const [message, setMessage] = useState('');
   return (
     <form
       className={styles['send-box']}
-      id={id+"-send-box"}
       onSubmit={(e) => {
         e.preventDefault();
-        addMessage(input,isMe);
-        setInput('');
+        addMessage(message,isMe);
+        setMessage('');
       }}
     >
       <label
@@ -25,15 +24,15 @@ const SendTextBox = ({id, title, isMe, addMessage}) => {
         {title}
       </label>
       <input
-        value={input}
+        value={message}
         className={[styles['input-box']].join(' ')}
         name={title}
-        onInput={e => setInput(e.target.value)}
+        onChange={e => setMessage(e.target.value)}
       >
       </input>
       <div className={styles['send-buffer']}>
-        <SendButton
-          children={<IoIosArrowRoundForward/>}
+        <IconButton
+          icon={<IoIosArrowRoundForward/>}
           moduleStyle={"icon-button-send"}
         />
       </div>
@@ -42,9 +41,9 @@ const SendTextBox = ({id, title, isMe, addMessage}) => {
 };
 
 SendTextBox.propTypes = {
-  id: PropTypes.number,
   title: PropTypes.string,
-  isMe: PropTypes.bool
+  isMe: PropTypes.bool,
+  addMessage: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => state;

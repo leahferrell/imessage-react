@@ -23,8 +23,7 @@ MessageHistory.propTypes = {
 };
 
 const getMessageHistory = (messages) => {
-  //TODO: add logic here as needed
-  console.log(messages);
+  //TODO: add logic here
   return messages;
 };
 

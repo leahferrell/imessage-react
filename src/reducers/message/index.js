@@ -1,4 +1,4 @@
-import {ADD_MESSAGE, BLANK_MESSAGE, initialState} from "../../actions/message";
+import {ADD_MESSAGE, BLANK_MESSAGE, CLEAR_HISTORY, initialState} from "../../actions/message";
 
 const messages = (state = initialState, action) => {
   console.log(state);
@@ -14,6 +14,8 @@ const messages = (state = initialState, action) => {
       ];
     case BLANK_MESSAGE:
       return state;
+    case CLEAR_HISTORY:
+      return [];
     default:
       return state;
   }

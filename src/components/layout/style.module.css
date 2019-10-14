@@ -1,17 +1,3 @@
-.controller {
-    float: left;
-    position: relative;
-}
-
-.phone {
-    float: right;
-    position: relative;
-}
-
-.clear {
-    clear: both;
-}
-
 .container {
 }
 
