@@ -12,6 +12,6 @@ This project was developed by Leah Ferrell as an exploration of React and Redux 
 3. `npm start`
 4. Navigate to: `http://localhost:3000`
 
-## Sample Image
+## Screen Recording
 
-![sample image](docs/screenshot-1.png)
+![screen recording](docs/imessage-sim-recording-1.gif)
