@@ -1,4 +1,10 @@
-import {ADD_MESSAGE, BLANK_MESSAGE, CLEAR_HISTORY, initialState} from "../../actions/messages";
+import {ADD_MESSAGE, BLANK_MESSAGE, CLEAR_HISTORY} from "../../actions/messages";
+
+export const initialState = [{
+  id: 0,
+  isMe: false,
+  text: "hey"
+}];
 
 const messages = (state = initialState, action) => {
   switch (action.type) {

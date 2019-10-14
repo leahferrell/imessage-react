@@ -5,12 +5,6 @@ export const CLEAR_HISTORY = 'CLEAR_HISTORY';
 export const ADD_MESSAGE = 'ADD_MESSAGE';
 export const BLANK_MESSAGE = 'BLANK_MESSAGE';
 
-export const initialState = [{
-  id: 0,
-  isMe: false,
-  text: "hey"
-}];
-
 let nextMessageId = 1;
 
 export function addMessage(text, isMe){

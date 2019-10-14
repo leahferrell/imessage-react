@@ -8,10 +8,7 @@ const PhoneWindow = () => (
   <div
     className={styles['window']}
   >
-      <Header
-        initials={"BS"}
-        name={"Britain"}
-      />
+      <Header/>
       <MessageHistory/>
       <CollapsedInputFooter/>
   </div>

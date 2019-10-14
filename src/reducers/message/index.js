@@ -1,4 +1,9 @@
-import {SET_MESSAGE, initialState} from "../../actions/message";
+import {SET_MESSAGE} from "../../actions/message";
+
+export const initialState = {
+  text: '',
+  isMe: true
+};
 
 const message = (state = initialState, action) => {
   switch (action.type) {
