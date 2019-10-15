@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style.module.css'
 
 const Header = () => (
-  <div className={[styles["header"],"animated","slideInDown","slow","delay-5s"].join(' ')}>
+  <div className={[styles["header"],"animated","slideInDown","slow","delay-3s"].join(' ')}>
     <div className={styles["header-left"]}>
       <a
         href="https://github.com/leahthecatlady/imessage-react"

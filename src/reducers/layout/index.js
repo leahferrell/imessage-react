@@ -1,7 +1,8 @@
-import {TOGGLE_SETTINGS} from "../../actions/layout";
+import {SET_LOADED, TOGGLE_SETTINGS} from "../../actions/layout";
 
 export const initialState = {
-  isSettings: false
+  isSettings: false,
+  alreadyLoaded: false
 };
 
 const layout = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const layout = (state = initialState, action) => {
       return {
         ...state,
         isSettings: action.isSettings
+      };
+    case SET_LOADED:
+      return {
+        ...state,
+        alreadyLoaded: true
       };
     default:
       return state;

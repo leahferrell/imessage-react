@@ -8,43 +8,47 @@ import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import {toggleSettings} from "../../../actions/layout";
 
-const SendTextsFrame = ({removeAllMessages, turnOnSettings}) => (
-  <div className={[styles['send-texts-frame'],'animated','fadeIn','slow'].join(' ')}>
-    <h1>Say hello.</h1>
-    <div className={[styles['inputs'],'animated','fadeIn','delay-3s','slow'].join(' ')}>
-      <SendTextBox
-        title={"Send a message."}
-        isMe={true}
-      />
-      <SendTextBox
-        title={"Don't leave them on read."}
-        isMe={false}
-      />
-      <br/>
-      <div className={[styles['buttons'],styles['corner-buttons']].join(' ')}>
-        <IconButton
-          icon={<IoIosTrash/>}
-          onClick={()=> removeAllMessages() }
+const SendTextsFrame = ({removeAllMessages, turnOnSettings}) => {
+  return (
+    <div className={[styles['send-texts-frame'],'animated','fadeIn','slow'].join(' ')}>
+      <h1>Say hello.</h1>
+      <div className={[styles['inputs'],'animated','fadeIn','slow'].join(' ')}>
+        <SendTextBox
+          title={"Send a message."}
+          isMe={true}
         />
-        <IconButton
-          icon={<IoIosBuild/>}
-          onClick={() => turnOnSettings()}
+        <SendTextBox
+          title={"Don't leave them on read."}
+          isMe={false}
         />
+        <br/>
+        <div className={[styles['buttons'],styles['corner-buttons']].join(' ')}>
+          <IconButton
+            icon={<IoIosTrash/>}
+            onClick={()=> removeAllMessages() }
+          />
+          <IconButton
+            icon={<IoIosBuild/>}
+            onClick={() => turnOnSettings()}
+          />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 SendTextsFrame.propTypes = {
   removeAllMessages: PropTypes.func.isRequired,
-  turnOnSettings: PropTypes.func.isRequired
+  turnOnSettings: PropTypes.func.isRequired,
+  alreadyLoaded: PropTypes.bool,
+  setHasLoaded: PropTypes.func
 };
 
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = (dispatch) => ({
   removeAllMessages: () => dispatch(removeAllMessages()),
-  turnOnSettings: () => dispatch(toggleSettings(true))
+  turnOnSettings: () => dispatch(toggleSettings(true)),
 });
 
 export default connect(

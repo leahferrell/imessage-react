@@ -1,5 +1,4 @@
 .text-button {
-    margin-left: -20px;
     border: none;
     font-size: 20px;
     border-radius: 50%;
@@ -10,14 +9,14 @@
 }
 
 .text-button {
-    display: block;
+    display: inline-block;
     background: #0085D1;
     border-radius: 30px;
     padding: 15px 30px;
     color: #fff;
     font-size: .8em;
     text-align: center;
-    margin: auto;
+    margin: 0 15px;
 }
 
 .text-button:hover, .text-button:active {
@@ -26,4 +25,12 @@
 
 .text-button:focus {
     outline: none;
+}
+
+.button-cancel {
+    background-color: #868686;
+}
+
+.button-cancel:hover {
+    background-color: #909090;
 }

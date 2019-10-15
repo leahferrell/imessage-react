@@ -55,7 +55,15 @@ const SettingsFrame = ({initials, name, setContact, turnOffSettings}) => {
           <div className={styles['submit']}>
             <TextButton
               text="Update"
-              moduleStyle={"icon-button-send"}
+            />
+            <TextButton
+              text="Cancel"
+              type="button"
+              moduleStyle={"button-cancel"}
+              onClick={() => {
+                setContact(initials,name);
+                turnOffSettings();
+              }}
             />
           </div>
         </form>

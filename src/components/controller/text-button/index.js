@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './style.module.css'
 import PropTypes from "prop-types";
 
-const TextButton = ({text, moduleStyle='', onClick}) => (
+const TextButton = ({text, moduleStyle='', onClick, type="submit"}) => (
   <button
     className={[styles['text-button'], styles[moduleStyle]].join(' ')}
-    type="submit"
+    type={type}
     onClick={onClick}
   >
     {text}
@@ -15,7 +15,8 @@ const TextButton = ({text, moduleStyle='', onClick}) => (
 TextButton.propTypes = {
   text: PropTypes.string,
   moduleStyle: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  type: PropTypes.string
 };
 
 export default TextButton

@@ -79,3 +79,7 @@ h1 {
     bottom: 51px;
     right: 8px;
 }
+
+.submit {
+    text-align: center;
+}
