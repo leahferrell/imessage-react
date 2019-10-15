@@ -53,7 +53,6 @@ const filterSendTextBox = (isMe, message) => (
 );
 
 const mapStateToProps = (state, ownProps) => ({
-  ...ownProps,
   text: filterSendTextBox(ownProps.isMe, state.message)
 });
 

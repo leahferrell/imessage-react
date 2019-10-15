@@ -1,0 +1,87 @@
+.chat-bubble {
+    height: 36px;
+    width: 23px;
+    background: #eee;
+    position: relative;
+    margin: 0 0 10px 20px;
+}
+
+.chat-bubble:before {
+    content: '';
+    height: 36px;
+    width: 36px;
+    left: -18px;
+    position: absolute;
+    display: block;
+    background: #eee;
+    border-radius: 50%;
+    z-index: 1;
+}
+.chat-bubble:after {
+    content: '';
+    height: 36px;
+    width: 36px;
+    right: -18px;
+    position: absolute;
+    display: block;
+    background: #eee;
+    border-radius: 50%;
+    z-index: 1;
+}
+.chat-bubble .tail {
+    height: 12px;
+    width: 12px;
+    background: #eee;
+    position: absolute;
+    left: -20px;
+    bottom: 1px;
+    border-radius: 50%;
+}
+.chat-bubble .tail:before {
+    height: 6px;
+    width: 6px;
+    background: #eee;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    bottom: -4px;
+}
+.chat-bubble .loading {
+    position: absolute;
+    z-index: 10;
+    width: 33px;
+    left: -5px;
+    top: 14px;
+}
+.chat-bubble .loading .dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #c1c1c1;
+    display: block;
+    float: left;
+    margin: 0 0 0 4px;
+}
+.chat-bubble .loading .dot:first-child {
+    margin: 0;
+}
+.chat-bubble .loading .dot.one {
+    -webkit-animation: cycleOne 1s ease-in-out infinite;
+    -webkit-animation-direction: normal;
+}
+.chat-bubble .loading .dot.two {
+    -webkit-animation: cycleTwo 1s ease-in-out infinite;
+    -webkit-animation-direction: normal;
+}
+.chat-bubble .loading .dot.three {
+    -webkit-animation: cycleThree 1s ease-in-out infinite;
+    -webkit-animation-direction: normal;
+}
+.container {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

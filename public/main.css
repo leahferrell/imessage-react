@@ -7,3 +7,46 @@ body {
     flex-direction: column;
     background-color: #000;
 }
+
+@-webkit-keyframes cycleOne {
+    0% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    33.333% {
+        background: #969696;
+    }
+    66.6667% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    100% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+}
+@-webkit-keyframes cycleTwo {
+    0% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    33.333% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    66.6667% {
+        background: #969696;
+    }
+    100% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+}
+@-webkit-keyframes cycleThree {
+    0% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    33.333% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    66.6667% {
+        background: rgba(150, 150, 150, 0.4);
+    }
+    100% {
+        background: #969696;
+    }
+}

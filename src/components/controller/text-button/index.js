@@ -2,20 +2,20 @@ import React from 'react'
 import styles from './style.module.css'
 import PropTypes from "prop-types";
 
-const IconButton = ({icon, moduleStyle='', onClick}) => (
+const TextButton = ({text, moduleStyle='', onClick}) => (
   <button
-    className={[styles['icon-button'], styles[moduleStyle]].join(' ')}
+    className={[styles['text-button'], styles[moduleStyle]].join(' ')}
     type="submit"
     onClick={onClick}
   >
-    {icon}
+    {text}
   </button>
 );
 
-IconButton.propTypes = {
-  icon: PropTypes.object,
+TextButton.propTypes = {
+  text: PropTypes.string,
   moduleStyle: PropTypes.string,
   onClick: PropTypes.func
 };
 
-export default IconButton
+export default TextButton

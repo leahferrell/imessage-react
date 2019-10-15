@@ -6,21 +6,18 @@ import {IoIosTrash, IoIosBuild} from "react-icons/io";
 import {removeAllMessages} from "../../../actions/messages";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
+import {toggleSettings} from "../../../actions/layout";
 
-const LeftFrame = ({removeAllMessages}) => (
-  <div className={[styles['frame-controller'],'animated','fadeIn','slow'].join(' ')}>
+const SendTextsFrame = ({removeAllMessages, turnOnSettings}) => (
+  <div className={[styles['send-texts-frame'],'animated','fadeIn','slow'].join(' ')}>
     <h1>Say hello.</h1>
     <div className={[styles['inputs'],'animated','fadeIn','delay-3s','slow'].join(' ')}>
       <SendTextBox
-        id = {0}
         title={"Send a message."}
-        defaultText={"from you..."}
         isMe={true}
       />
       <SendTextBox
-        id = {1}
         title={"Don't leave them on read."}
-        defaultText={"from them..."}
         isMe={false}
       />
       <br/>
@@ -31,23 +28,26 @@ const LeftFrame = ({removeAllMessages}) => (
         />
         <IconButton
           icon={<IoIosBuild/>}
+          onClick={() => turnOnSettings()}
         />
       </div>
     </div>
   </div>
 );
 
-LeftFrame.propTypes = {
-  removeAllMessages: PropTypes.func.isRequired
+SendTextsFrame.propTypes = {
+  removeAllMessages: PropTypes.func.isRequired,
+  turnOnSettings: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = (dispatch) => ({
-  removeAllMessages: () => dispatch(removeAllMessages())
+  removeAllMessages: () => dispatch(removeAllMessages()),
+  turnOnSettings: () => dispatch(toggleSettings(true))
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(LeftFrame);
+)(SendTextsFrame);

@@ -33,7 +33,7 @@ p {
 }
 
 .messages {
-    margin-top: 30px;
+    margin: 0 5px;
     display: flex;
     flex-direction: column;
 }

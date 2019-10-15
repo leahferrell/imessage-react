@@ -3,7 +3,7 @@ h1 {
     padding-bottom: 50px;
 }
 
-.frame-controller {
+.send-texts-frame, .settings-frame {
     background-color: #000;
     color: white;
     padding: 40px;
@@ -15,10 +15,15 @@ h1 {
     position: absolute;
 }
 
+.configuration {
+    color: white;
+}
+
 .send-label {
     display: block;
     margin-bottom: 30px;
     font-size: 1.25em;
+    color: #fff;
 }
 
 .input-box {
@@ -36,6 +41,7 @@ h1 {
     background-color: #000;
     border: #fff 3px solid;
     width: calc(100% - 78px);
+    color: #fff;
     outline: none;
     padding: 15px 52px 15px 20px;
 
@@ -54,43 +60,6 @@ h1 {
     display: block;
     margin: 0 auto;
     text-align: center;
-}
-
-.icon-button, .icon-button-send {
-    font-size: 1.25em;
-    background: transparent;
-    border: 2px solid #868686;
-    padding: 7px;
-    line-height: 0;
-    color: #868686;
-    margin: 0 0 0 10px;
-    border-radius: 30px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.icon-button:hover, .icon-button:active,
-.icon-button-send:hover, .icon-button-send:active {
-    color: #fff;
-    background: transparent;
-    border: 3px solid #fff;
-    padding: 6px;
-}
-
-.icon-button:focus {
-    outline: none;
-}
-
-.icon-button-send {
-    color: #0085D1;
-    border: 2px solid #0085D1;
-}
-
-.icon-button-send:hover, .icon-button-send:active {
-    color: #398cd8;
-    border: 3px solid #398cd8;
-    font-weight: bold;
 }
 
 .corner-buttons {

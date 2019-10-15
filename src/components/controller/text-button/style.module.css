@@ -1,0 +1,29 @@
+.text-button {
+    margin-left: -20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-button {
+    display: block;
+    background: #0085D1;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+    margin: auto;
+}
+
+.text-button:hover, .text-button:active {
+    background-color: #398cd8;
+}
+
+.text-button:focus {
+    outline: none;
+}

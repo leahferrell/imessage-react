@@ -1,0 +1,36 @@
+.icon-button, .icon-button-send {
+    font-size: 1.25em;
+    background: transparent;
+    border: 2px solid #868686;
+    padding: 7px;
+    line-height: 0;
+    color: #868686;
+    margin: 0 0 0 10px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-button:hover, .icon-button:active,
+.icon-button-send:hover, .icon-button-send:active {
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 6px;
+}
+
+.icon-button:focus {
+    outline: none;
+}
+
+.icon-button-send {
+    color: #0085D1;
+    border: 2px solid #0085D1;
+}
+
+.icon-button-send:hover, .icon-button-send:active {
+    color: #398cd8;
+    border: 3px solid #398cd8;
+    font-weight: bold;
+}
